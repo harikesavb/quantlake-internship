@@ -1,2 +1,1 @@
 # quantlake-internship
-Internship progress
