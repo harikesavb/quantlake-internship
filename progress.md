@@ -85,3 +85,40 @@
 
 - Hardest: Debugging recursive functions, handling input errors, and deep exception tracing
 
+### 🛠 Day 3 – June 19
+
+**📂 Dataset Used:**  
+- `tested.csv` (Titanic dataset)
+
+**🔍 Features Explored:**
+
+- Created Series and DataFrame from scratch
+
+- Inspected data with .head(), .tail(), .shape, .columns, .dtypes
+
+- Loaded data using pd.read_csv()
+
+- Used .info(), .describe(), .isnull().sum() for exploration
+
+- Accessed data using df['col'], df[['col1','col2']], df.loc[], df.iloc[]
+
+- Added a new column (family_size = SibSp + Parch)
+
+- Dropped a column (Cabin) and a row (index 0)
+
+- Used .sort_values(), .value_counts(), .unique()
+
+- Calculated summary stats with .mean(), .sum(), .min(), .max()
+
+**📌 Key Learnings & Observations:**
+- `value_counts()` is great for analyzing categorical features like `Sex`
+- `df.loc[]` (label-based) vs `df.iloc[]` (position-based) clarified
+- Pandas arithmetic makes creating new columns easy
+- `isnull().sum()` quickly reveals missing values
+- `describe()` gives powerful statistical summaries with one line
+
+**🐞 Bugs or Blockers:**
+- No major blockers; clarified confusion between `.loc[]` and `.iloc[]` with examples
+
+
+
