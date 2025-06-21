@@ -85,7 +85,7 @@
 
 - Hardest: Debugging recursive functions, handling input errors, and deep exception tracing
 
-### 🛠 Day 3 – June 19
+### 🛠 Day 3 – Python + Pandas Introduction
 
 **📂 Dataset Used:**  
 - `tested.csv` (Titanic dataset)
