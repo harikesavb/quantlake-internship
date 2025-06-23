@@ -1,6 +1,7 @@
 ### **✅ Week 1:**
 
 ### 🛠 Day 1:Onboarding and Environment Setup
+---
 
 **Environment Chosen:**
 - Google Colab (easy setup and runs in browser)
@@ -23,6 +24,7 @@
 
 
 ### 🛠 Day 2:Python Fundamentals
+---
 
 **Environment Chosen:**
 
@@ -86,11 +88,12 @@
 - Hardest: Debugging recursive functions, handling input errors, and deep exception tracing
 
 ### 🛠 Day 3 – Python + Pandas Introduction
+---
 
 **📂 Dataset Used:**  
 - `tested.csv` (Titanic dataset)
 
-**🔍 Features Explored:**
+**Features Explored:**
 
 - Created Series and DataFrame from scratch
 
@@ -110,15 +113,64 @@
 
 - Calculated summary stats with .mean(), .sum(), .min(), .max()
 
-**📌 Key Learnings & Observations:**
+**Key Learnings & Observations:**
 - `value_counts()` is great for analyzing categorical features like `Sex`
 - `df.loc[]` (label-based) vs `df.iloc[]` (position-based) clarified
 - Pandas arithmetic makes creating new columns easy
 - `isnull().sum()` quickly reveals missing values
 - `describe()` gives powerful statistical summaries with one line
 
-**🐞 Bugs or Blockers:**
+** Bugs or Blockers:**
 - No major blockers; clarified confusion between `.loc[]` and `.iloc[]` with examples
+
+### 🛠 Day 4 – Pandas: Data Manipulation I
+---
+
+**📂 Dataset Used:**
+- Netflix Titles dataset (`netflix_titles.csv`)
+
+**Indexing & Slicing**
+- Used `df.loc[]` and `df.iloc[]` to:
+  - Access full rows and specific columns
+  - Extract rows using conditional logic (e.g., TV Shows released after 2018)
+
+**Filtering & Sorting**
+- Applied filters like:
+  - Movies released before 2010
+  - TV Shows or shows from India
+- Sorted records by:
+  - `release_year` (descending)
+  - Combination of `country` + `release_year`
+
+**Handling Missing Data**
+- Detected null values with `df.isnull().sum()`
+- Dropped missing data rows using `df.dropna()`
+- Replaced missing values using:
+  - `df['country'].fillna('Unknown')`
+  - `df['director'].fillna('Not Provided')`
+
+**GroupBy Operations**
+- Grouped by `type` to compute average `release_year`
+- Grouped by `country` and aggregated:
+  - `count` of titles
+  - `min`, `max`, and `mean` of `release_year`
+
+**🔗 Merging DataFrames**
+- Created a second table with `show_id` and `origin_platform`
+- Performed:
+  - `INNER JOIN` to match Netflix titles
+  - `LEFT JOIN` to keep all Netflix titles with platform info
+  - `OUTER JOIN` to retain unmatched records from both
+
+
+**What I Learned**
+- Learned when to use `loc[]` vs `iloc[]`
+- Practiced data cleaning techniques for missing data
+- Strengthened understanding of `groupby()` and `merge()` operations
+- Understood differences between `inner`, `left`, and `outer` joins
+
+
+
 
 
 
