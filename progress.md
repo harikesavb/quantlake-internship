@@ -138,7 +138,7 @@
 - Understood differences between `inner`, `left`, and `outer` joins
 
 
-### 🛠 Day 5 – June 21
+### 🛠 Day 5 – Pandas: Data Manipulation II
 
 **Focus:** Reshaping, Transformation, and Combining DataFrames
 
