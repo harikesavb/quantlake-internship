@@ -171,6 +171,41 @@
 - Built a complete data pipeline from cleaning to dashboard summary using Pandas
 
 
+### 🛠 Day 6 – Data Visualization
+
+**Focus:** Data Visualization with Matplotlib and Seaborn
+
+---
+
+### ✅ Tasks Completed:
+
+**Chart Types Learned:**
+- Line Plot (`plt.plot`)
+- Scatter Plot (`plt.scatter`)
+- Histogram (`sns.histplot`)
+- Boxplot (`sns.boxplot`)
+- Heatmap (`sns.heatmap`)
+- Bar Chart (`sns.barplot`)
+
+**Data and Features Visualized:**
+- Superstore dataset used throughout
+- Visualized sales and profit trends over time
+- Correlation between discount, sales, and profit
+- Categorical comparison of profits by Sub-Category and Region
+- Flagged outliers using boxplots and explored distributions with histograms
+
+**Charts Saved as Image Files:**
+- `daily_sales_line_plot.png`
+- `sales_vs_profit_scatter.png`
+- `publish_quality_monthly_sales.png`
+
+**Most Proud of:**
+- ✅ *Monthly Sales Trend – Publish-Quality Line Chart*
+  - Applied color styling, font customization, DPI=300, and layout adjustments
+  - Ready for inclusion in reports or dashboards
+
+
+
 
 
 
