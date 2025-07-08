@@ -203,6 +203,46 @@
 - ✅ *Monthly Sales Trend – Publish-Quality Line Chart*
   - Applied color styling, font customization, DPI=300, and layout adjustments
   - Ready for inclusion in reports or dashboards
+ 
+### 🛠 Day 8 – SQL Integration
+
+**Focus:** SQL Integration with Pandas and Data Manipulation
+
+---
+
+### ✅ Tasks Completed
+
+** Complex SQL Queries Used**
+- Used `SELECT`, `WHERE`, `GROUP BY`, `COUNT()`, and `AVG()` to summarize regional sales
+- Wrote subqueries in `WHERE` clauses to filter high-value customers
+- Updated SQL records using `UPDATE` and removed invalid data using `DELETE`
+- Merged customer and order tables using `pd.merge()` (simulating `INNER JOIN`)
+- Retrieved SQL results into Pandas with `pd.read_sql_query()`
+
+** SQL vs Pandas – What Worked Best?**
+- **SQL:** Excellent for filtering and aggregation tasks
+- **Pandas:** Ideal for post-query transformation and data chaining
+
+** Favorite Integration Technique**
+- `pd.read_sql_query()` to connect SQL with Pandas workflows
+- `pd.merge()` for clean SQL-style joins inside Python
+
+** Key Skills Practiced**
+- SQL filtering, joins, and subqueries
+- Data updates (`UPDATE`) and cleanup (`DELETE`) in SQLite
+- Importing and analyzing SQL output in Pandas
+- Merging datasets based on foreign keys
+
+** Easiest vs Hardest**
+- **Easiest:** Importing SQL results into Pandas
+- **Hardest:** Troubleshooting subqueries and aligning merge keys
+
+** Blockers or Questions**
+- Column mismatches during merges (`Customer ID` vs `customer_id`)
+- Needed to rename columns for smooth `pd.merge()` execution
+
+
+
 
 
 
