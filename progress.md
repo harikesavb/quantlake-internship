@@ -204,6 +204,47 @@
   - Applied color styling, font customization, DPI=300, and layout adjustments
   - Ready for inclusion in reports or dashboards
  
+
+---
+
+### 🗓️ Day 7 – SQL Fundamentals
+
+**Focus:** SQL Fundamentals Using SQLite + Superstore Dataset
+
+---
+
+#### 🗃️ Database Used
+- SQLite (in-memory)
+- Dataset: `Superstore.csv` loaded into SQLite table `superstore`
+
+---
+
+#### 📌 5 Interesting SQL Queries I Wrote
+
+1. **Filter sales greater than 100**
+    ```sql
+   SELECT * FROM superstore WHERE Sales > 100;
+    
+  **Filter by discount between 0.1 and 0.3**
+      
+    SELECT * FROM superstore WHERE Discount BETWEEN 0.1 AND 0.3;
+  **Exclude California orders**
+  
+     SELECT * FROM superstore WHERE State != 'California';
+  **Search product names containing “Chair**
+
+      SELECT * FROM superstore WHERE [Product Name] LIKE '%Chair%';
+
+  **Group sales by region**
+
+      SELECT Region, COUNT(*) AS order_count, SUM(Sales) AS total_sales
+      FROM superstore
+      GROUP BY Region;
+
+
+
+
+ 
 ### 🛠 Day 8 – SQL Integration
 
 **Focus:** SQL Integration with Pandas and Data Manipulation
